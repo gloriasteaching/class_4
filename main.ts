@@ -1,8 +1,5 @@
-controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
-    controller.moveSprite(mySprite, 100, 100)
-})
-controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-    controller.moveSprite(mySprite, 20, 20)
+controller.A.onEvent(ControllerButtonEvent.Repeated, function () {
+    mySprite.setPosition(5, 5)
 })
 let mySprite: Sprite = null
 mySprite = sprites.create(img`
